@@ -2,3 +2,17 @@
 ----------------------------
 15.6.2023, 14:24:04 	 Route /api/packages not exist
 ----------------------------
+15.6.2023, 15:47:49 	 Cast to ObjectId failed for value "Select Company" (type string) at path "companyId" for model "PackageModel"
+----------------------------
+15.6.2023, 15:48:09 	 Cast to ObjectId failed for value "Select Company" (type string) at path "companyId" for model "PackageModel"
+----------------------------
+15.6.2023, 15:58:22 	 Route /api/companies/648af8c00c8e0fc5a677fd4a not exist
+----------------------------
+15.6.2023, 15:58:26 	 Route /api/companies/648af8c00c8e0fc5a677fd4a not exist
+----------------------------
+15.6.2023, 15:59:42 	 Route /api/companies/648af8c00c8e0fc5a677fd4a not exist
+----------------------------
+15.6.2023, 16:00:09 	 Route /api/companies/648af8c00c8e0fc5a677fd4a not exist
+----------------------------
+17.6.2023, 23:48:19 	 PackageModel validation failed: weight: Weight is too high
+----------------------------

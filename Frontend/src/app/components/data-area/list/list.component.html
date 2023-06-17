@@ -1,1 +1,30 @@
-<p>list works!</p>
+<div>
+
+    <select (change)="getPackagesByCompany()" [(ngModel)]="companyId">
+        <option selected value="">Select Company</option>
+        <option *ngFor="let c of companies" value={{c._id}}>{{c.name}}</option>
+    </select>
+
+    <table>
+        <thead>
+            <th>Sender:</th>
+            <th>Address:</th>
+            <th>Date:</th>
+            <th>Weight:</th>
+            <th>Price:</th>
+            <th>Company Name:</th>
+            <th>Delete:</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of packages">
+                <td>{{p.sender}}</td>
+                <td>{{p.address}}</td>
+                <td>{{p.date}}</td>
+                <td>{{p.weight}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.companies.name}}</td>
+                <td (click)="deletePackage(p._id)">❌</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
